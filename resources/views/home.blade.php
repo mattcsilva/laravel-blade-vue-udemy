@@ -1,34 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-    <template>
-        <div class="container">
+    <pagina tamanho="10">
+        <painel titulo="Dashboard">
+            Teste de conteúdo...
+        
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <painel titulo="Dashboard">
-                        Teste de conteúdo...
-                    
-                        <div class="row">
-                            <div class="col-md-4">
-                                <painel titulo="Conteúdo 1" cor="panel-success">
-                                    Teste de conteúdo...
-                                </painel>
-                            </div>
-                            <div class="col-md-4">
-                                <painel titulo="Conteúdo 2" cor="panel-warning">
-                                    Teste de conteúdo...
-                                </painel>
-                            </div>
-                            <div class="col-md-4">
-                                <painel titulo="Conteúdo 3" cor="panel-info">
-                                    Teste de conteúdo...
-                                </painel>
-                            </div>
-                        </div>
-
-                    </painel>
+                <div class="col-md-4">
+                <caixa qtd="80" titulo="Artigos" url="{{route('artigos.index')}}" cor="orange" icone="ion ion-pie-graph"></caixa>
+                </div>
+                <div class="col-md-4">
+                    <caixa qtd="1500" titulo="Usuários" url="#" cor="blue" icone="ion ion-person-stalker"></caixa>
+                </div>
+                <div class="col-md-4">
+                    <caixa qtd="3" titulo="Autores" url="#" cor="red" icone="ion ion-person"></caixa>
                 </div>
             </div>
-        </div>
-    </template>
+
+        </painel>
+    </pagina>
 @endsection
